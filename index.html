@@ -1,97 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Описание страницы">
-    <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
-    <title>First page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="Описание страницы">
+  <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
+  <title>First page</title>
 </head>
-<p>
-    <p><h1>Hello World!</h1></p>
-    <p>The quick brown fox jumps over the lazy dog.</p>
-    <p title="Подсказка">При наведении мыши на элемент появилось небольшое окно с текстом.</p>
-    
-    <p>
-        <b>Bold</b>
-        <strong>Strong</strong>
-        <i>Italic</i>
-        <em>Italic(em)</em>
-        <u>Underline</u>
-    </p>
 
-    <h1>Заголовок первого уровня</h1>
-    <h2>Заголовок второго уровня</h2>
-    <h3>Заголовок третьего уровня</h3>
-    <h4>Заголовок четвёртого уровня</h4>
-    <h5>Заголовок пятого уровня</h5>
-    <h6>Заголовок шестого уровня</h6>
+<header>
+  <!-- Логотип сайта -->
+  <img src="https://uploads.turbologo.com/uploads/design/preview_image/472643/preview_image20220425-1141-1a4nboo.png"
+    alt="Логотип" width="200" height="200">
+  <nav>
+    <!-- Меню -->
+    <ul>
+      <li><a href="/">Главная</a></li>
+      <li><a href="/about">О нас</a></li>
+    </ul>
+  </nav>
+</header>
 
+<aside>
+  <!-- Боковая панель (сайдбар) -->
+  <nav>
+    <!-- Дополнительное меню страницы -->
+    <ul>
+      <li><a href="/service-1/">Услуга 1</a></li>
+      <li><a href="/service-2/">Услуга 2</a></li>
+      <li><a href="/service-3/">Услуга 3</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<main>
+  <h1>Hello World!</h1>
+
+  <p>The quick brown fox jumps over the lazy dog.</p>
+  <p title="Подсказка">При наведении мыши на элемент появилось небольшое окно с текстом.</p>
+
+  <p>
+    <b>Bold</b>
+    <strong>Strong</strong>
+    <i>Italic</i>
+    <em>Italic(em)</em>
+    <u>Underline</u>
+  </p>
+
+  <h1>Заголовок первого уровня</h1>
+  <h2>Заголовок второго уровня</h2>
+  <h3>Заголовок третьего уровня</h3>
+  <h4>Заголовок четвёртого уровня</h4>
+  <h5>Заголовок пятого уровня</h5>
+  <h6>Заголовок шестого уровня</h6>
+
+  <section class="section-1">
+    <h2>Списки и таблицы</h2>
     <ol>
-        <li>Купить корм</li>
-        <li>Сходить к Алексею</li>
-        <li>Приготовить ужин</li>
-        <li>Съесть ужин</li>
-        <li>Помыть посуду</li>
+      <li>Купить корм</li>
+      <li>Сходить к Алексею</li>
+      <li>Приготовить ужин</li>
+      <li>Съесть ужин</li>
+      <li>Помыть посуду</li>
     </ol>
 
     <ol>
-        <li>Профессия JavaScript
-          <ul>
-            <li>Frontend</li>
-            <li>Backend</li>
-          </ul>
-        </li>
-        <li>Профессия PHP</li>
+      <li>Профессия JavaScript
+        <ul>
+          <li>Frontend</li>
+          <li>Backend</li>
+        </ul>
+      </li>
+      <li>Профессия PHP</li>
     </ol>
 
     <table>
-        <thead>
-          <tr>
-            <th>Вкусняшка</th>
-            <th>Кол-во</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Конфеты</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Шоколад</td>
-            <td>5</td>
-          </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Вкусняшка</th>
+          <th>Кол-во</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Конфеты</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Шоколад</td>
+          <td>5</td>
+        </tr>
+      </tbody>
     </table>
     <br>
 
     <table>
-        <thead>
-          <tr>
-            <th>Text1</th>
-            <th>Text2</th>
-            <th>Text3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="2">Long text 1</td>
-            <td rowspan="2">3</td>
+      <thead>
+        <tr>
+          <th>Text1</th>
+          <th>Text2</th>
+          <th>Text3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Long text 1</td>
+          <td rowspan="2">3</td>
         </tr>
         <tr>
-            <td colspan="2">Long text 2</td>
+          <td colspan="2">Long text 2</td>
         </tr>
         <tr>
-            <td colspan="2">Long text 3</td>
-            <td>3</td>
-          </tr>
-        </tbody>
+          <td colspan="2">Long text 3</td>
+          <td>3</td>
+        </tr>
+      </tbody>
     </table>
-    <br>
+  </section>
 
-    <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">Специальные символы HTML</a>    
-    <p>&nbsp; неразрывный пробел. Очень важная вещь, которая позволяет не переносить строку с пробелом там, где это может испортить логическую структуру текста</p>
+  <section class="section-2">
+    <h2>Медиа контент и прочее</h2>
+    <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">Специальные
+      символы HTML</a>
+    <p>&nbsp; неразрывный пробел. Очень важная вещь, которая позволяет не переносить строку с пробелом там, где это
+      может
+      испортить логическую структуру текста</p>
     <p>&laquo; и &raquo; традиционные «кавычки-ёлочки». Повсеместно используются в типографике</p>
     <p>&mdash; длинное тире</p>
 
@@ -103,18 +138,151 @@
     </pre>
 
     <code>
-        &lt;<span>p</span>&gt;Вставляем тег p в виде простого текста &lt;<span>/p</span>&gt;
+      &lt;<span>p</span>&gt;Вставляем тег p в виде простого текста &lt;<span>/p</span>&gt;
     </code>
     <br><br>
 
     <img src="https://www.w3.org/2008/site/images/logo-w3c-screen-lg.png" alt="W3C">
 
     <audio controls>
-        <source src="https://www.w3schools.com/html/horse.ogg">
-        <source src="https://www.w3schools.com/html/horse.mp3">
+      <source src="https://www.w3schools.com/html/horse.ogg">
+      <source src="https://www.w3schools.com/html/horse.mp3">
     </audio>
 
     <br>
     <video src="https://www.w3schools.com/html/movie.mp4" width="320" height="240" controls></video>
+  </section>
+
+  <section>
+    <h2>Формы</h2>
+    <span>Span является строчным элементом.</span>
+    <span>Он занимает ширину, равную ширине своего контента, поэтому переноса строки нет</span>
+
+    <form action="/people">
+      // Данные, после заполнения, будут отправлены на страницу /people
+    </form>
+
+    <form>
+      <label>Введите имя
+        <input type="text">
+      </label>
+    </form>
+
+    <form>
+      <label for="fullname">Введите имя и фамилию</label>
+      <input type="text" id="fullname" placeholder="Иван Иванов">
+    </form>
+
+    <form>
+      <label for="pin">Введите пинкод</label>
+      <input type="password" id="pin" placeholder="1234">
+    </form>
+
+    <form>
+      <label>
+        <input type="checkbox" name="languages" value="HTML">
+        Хочу изучать HTML
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="languages" value="CSS">
+        Хочу изучать CSS
+      </label>
+      <br>
+      <label>
+        <input type="checkbox" name="languages" value="JS">
+        Хочу изучать JS
+      </label>
+    </form>
+
+    <form>
+      <label>
+        <input type="radio" name="question" value="yes">
+        Да
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="question" value="no">
+        Нет
+      </label>
+    </form>
+
+    <form>
+      <textarea rows="10" cols="150">10 * 150</textarea>
+    </form>
+
+    <form>
+      <select>
+        <option disabled>Какой курс вы хотите пройти?</option>
+        <option>JS</option>
+        <option>PHP</option>
+        <option>Java</option>
+        <option>Racket</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select>
+    </form>
+
+    <form>
+      <select multiple>
+        <option>JS</option>
+        <option>PHP</option>
+        <option>Java</option>
+        <option>Racket</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select>
+    </form>
+
+    <h2>Форма поиска</h2>
+    <form>
+      <label>
+        Введите ваш запрос
+        <input type="search">
+      </label>
+      <select>
+        <option disabled>В каком разделе искать?</option>
+        <option>JS</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select>
+      <button>Искать</button>
+    </form>
+  </section>
+
+  <section class="callback-form">
+    <h2>Оставить заявку</h2>
+    <article class="article-block">
+      <h3>Услуга 2</h3>
+      <p>Описание новой услуги</p>
+      <a href="#">Ссылка на услугу</a>
+    </article>
+
+    <article class="article-block">
+      <h3>Услуга 3</h3>
+      <p>Описание новой услуги</p>
+      <a href="#">Ссылка на услугу</a>
+    </article>
+  </section>
+
+  <section itemscope itemtype="http://schema.org/Organization">
+    <h2 itemprop="name">Компания «Прауд»</h2>
+    <p>Адрес: <span itemprop="address">г.Мотино, улица Строителей, дом 6</span></p>
+    <p>Телефон: <span itemprop="telephone">8 (8765) 333-00-00</span></p>
+    <p>Email: <span itemprop="email">info@proud-company.test</span></p>
+  </section>
+</main>
+
+<footer>
+  <!-- «Подвал статьи» с указанием автора и даты -->
+  <address>
+    <!-- Информация об авторе статьи -->
+    <p>Автор: Mikalai Kazlou</p>
+    <p>Email: mikalai_kazlou@epam.com</p>
+  </address>
+  <time datetime="2022-07-12">12 июля 2022</time> <!-- Дата написания статьи -->
+</footer>
+
 </body>
+
 </html>
