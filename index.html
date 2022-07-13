@@ -8,6 +8,44 @@
   <meta name="description" content="Описание страницы">
   <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
   <title>First page</title>
+
+  <style>
+    pre {
+      font-size: 20px;
+      color: mediumblue;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .base {
+      color: #553333;
+    }
+
+    .first-line {
+      font-variant: small-caps;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    #header {
+      color: red;
+      font-style: italic;
+    }
+
+    p {
+      color: black;
+    }
+
+    .red {
+      color: red;
+    }
+
+    #blue {
+      color: blue;
+    }
+  </style>
 </head>
 
 <header>
@@ -36,10 +74,19 @@
 </aside>
 
 <main>
-  <h1>Hello World!</h1>
+  <h1 class="base">Hello World!</h1>
 
-  <p>The quick brown fox jumps over the lazy dog.</p>
+  <p class="first-line" style="font-size: 32px;"><span class="underline">The quick</span> brown fox jumps over the lazy dog.</p>
   <p title="Подсказка">При наведении мыши на элемент появилось небольшое окно с текстом.</p>
+
+  <div style="border: 2px solid rgb(43, 161, 49); width: 50%;">
+    У блока появится рамка шириной 2 пикселя
+
+    <p>А у параграфа своей рамки не будет. При необходимости она устанавливается отдельно</p>
+    <p style="border: 1px solid #000;">Например, вот так</p>
+  </div>
+
+  <p id="blue" class="red">Текст с классом red и идентификатором blue</p>
 
   <p>
     <b>Bold</b>
@@ -49,7 +96,7 @@
     <u>Underline</u>
   </p>
 
-  <h1>Заголовок первого уровня</h1>
+  <h1 id="header">Заголовок первого уровня</h1>
   <h2>Заголовок второго уровня</h2>
   <h3>Заголовок третьего уровня</h3>
   <h4>Заголовок четвёртого уровня</h4>
