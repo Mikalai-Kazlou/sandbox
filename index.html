@@ -10,15 +10,25 @@
   <title>First page</title>
 
   <style>
+    :root {
+      --main-blue: #00bfff;
+    }
+
     pre {
       font-size: 20px;
-      color: mediumblue;
+      font-family: Arial, Futura, sans-serif;
       font-weight: bold;
+      line-height: 36px;
       text-align: center;
+      color: var(--main-blue);
     }
 
     .base {
       color: #553333;
+    }
+
+    .font-line {
+      font: italic small-caps bold 24px/1.2 Arial, sans-serif;
     }
 
     .first-line {
@@ -29,9 +39,50 @@
       text-decoration: underline;
     }
 
+    .border-dotted {
+      border: 1px dotted #000;
+    }
+
+    .card {
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #673ab7;
+      padding: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .card-hello {
+      width: 230px;
+      height: 25px;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #9c27b0;
+      color: #ffffff;
+      background-color: #fa7268;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .rectangle {
+      width: 100px;
+      height: 100px;
+      background-color: #000;
+      box-sizing: border-box;
+    }
+
+    .header {
+      font-size: 22px;
+    }
+
+    .offer {
+      font-size: 150%;
+    }
+
     #header {
       color: red;
       font-style: italic;
+      background-color: rgba(0, 0, 0, 0.1);
     }
 
     p {
@@ -44,6 +95,36 @@
 
     #blue {
       color: blue;
+    }
+
+    @media (max-width: 750px) {
+      .white-text-mobile {
+        color: #ffffff;
+      }
+    }
+
+    @keyframes color-change {
+      0% {
+        color: blue;
+      }
+
+      50% {
+        color: red;
+      }
+
+      100% {
+        color: blue;
+      }
+    }
+
+    .animation-text {
+      animation: color-change 5s infinite;
+    }
+
+    .fixed-position {
+      position: fixed;
+      top: 20px;
+      right: 20px;
     }
   </style>
 </head>
@@ -74,9 +155,13 @@
 </aside>
 
 <main>
-  <h1 class="base">Hello World!</h1>
+  <h1 class="base white-text-mobile">Hello World!</h1>
 
-  <p class="first-line" style="font-size: 32px;"><span class="underline">The quick</span> brown fox jumps over the lazy dog.</p>
+  <div class="fixed-position">Статический текст</div>
+
+  <p class="first-line" style="font-size: 32px;"><span class="underline">The quick</span> brown fox jumps over the lazy
+    dog.</p>
+  <p class="font-line animation-text">The quick brown fox jumps over the lazy dog.</p>
   <p title="Подсказка">При наведении мыши на элемент появилось небольшое окно с текстом.</p>
 
   <div style="border: 2px solid rgb(43, 161, 49); width: 50%;">
@@ -84,6 +169,22 @@
 
     <p>А у параграфа своей рамки не будет. При необходимости она устанавливается отдельно</p>
     <p style="border: 1px solid #000;">Например, вот так</p>
+  </div>
+  <br>
+
+  <div class="border-dotted">
+    Блок с пунктирной рамкой и чёрным цветом
+  </div>
+  <br>
+  <div class="card">Карточка с белым текстом на фиолетовом фоне</div>
+  <div class="card">Карточка с белым текстом на фиолетовом фоне</div>
+
+  <div class="rectangle"></div>
+
+  <div class="card-hello">Hello</div>
+
+  <div class="header">
+    <p class="offer">Размер относительно шрифта родительского элемента</p>
   </div>
 
   <p id="blue" class="red">Текст с классом red и идентификатором blue</p>
