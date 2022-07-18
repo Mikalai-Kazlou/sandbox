@@ -7,138 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="description" content="Описание страницы">
   <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
+  <link rel="stylesheet" href="style.css">
   <title>First page</title>
-
-  <style>
-    :root {
-      --main-blue: #00bfff;
-    }
-
-    pre {
-      font-size: 20px;
-      font-family: Arial, Futura, sans-serif;
-      font-weight: bold;
-      line-height: 36px;
-      text-align: center;
-      color: var(--main-blue);
-    }
-
-    .base {
-      color: #553333;
-    }
-
-    .font-line {
-      font: italic small-caps bold 24px/1.2 Arial, sans-serif;
-    }
-
-    .first-line {
-      font-variant: small-caps;
-    }
-
-    .underline {
-      text-decoration: underline;
-    }
-
-    .border-dotted {
-      border: 1px dotted #000;
-    }
-
-    .card {
-      font-size: 20px;
-      color: #ffffff;
-      background-color: #673ab7;
-      padding: 15px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-      outline: 2px solid #c52b1c; /* Параметры красной рамки */
-      outline-offset: 3px;
-    }
-
-    .card-hello {
-      width: 230px;
-      height: 25px;
-      padding: 20px;
-      margin: 10px;
-      border: 1px solid #9c27b0;
-      color: #ffffff;
-      background-color: #fa7268;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .rectangle {
-      width: 100px;
-      height: 100px;
-      background-color: #000;
-      box-sizing: border-box;
-    }
-
-    .header {
-      font-size: 22px;
-    }
-
-    .offer {
-      font-size: 150%;
-    }
-
-    #header {
-      color: red;
-      font-style: italic;
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-
-    p {
-      color: black;
-    }
-
-    .red {
-      color: red;
-    }
-
-    #blue {
-      color: blue;
-    }
-
-    @media (max-width: 750px) {
-      .white-text-mobile {
-        color: #ffffff;
-      }
-    }
-
-    @keyframes color-change {
-      0% {
-        color: blue;
-      }
-
-      50% {
-        color: red;
-      }
-
-      100% {
-        color: blue;
-      }
-    }
-
-    .animation-text {
-      animation: color-change 5s infinite;
-    }
-
-    .fixed-position {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-    }
-
-    .item {
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      left: 20px;
-      float: left;
-      background-color: #fa7268;
-    }
-  </style>
 </head>
 
 <header>
@@ -149,6 +19,7 @@
     <!-- Меню -->
     <ul>
       <li><a href="/">Главная</a></li>
+      <li><a href="flex.html" target="_blank">Flex</a></li>
       <li><a href="/about">О нас</a></li>
     </ul>
   </nav>
@@ -167,6 +38,12 @@
 </aside>
 
 <main>
+  <div class="container">
+    <div class="red">1</div>
+    <div class="green">2</div>
+    <div class="blue">3</div>
+  </div>
+
   <h1 class="base white-text-mobile">Hello World!</h1>
 
   <div class="fixed-position">Статический текст</div>
@@ -368,7 +245,7 @@
     </form>
 
     <form>
-      <textarea rows="10" cols="150">10 * 150</textarea>
+      <textarea rows="10" cols="50">10 * 50</textarea>
     </form>
 
     <form>
