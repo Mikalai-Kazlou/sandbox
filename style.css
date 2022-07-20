@@ -1,152 +1,152 @@
 :root {
-    --main-blue: #00bfff;
+  --main-blue: #00bfff;
 }
 
 pre {
-    font-size: 20px;
-    font-family: Arial, Futura, sans-serif;
-    font-weight: bold;
-    line-height: 36px;
-    text-align: center;
-    color: var(--main-blue);
+  font-size: 20px;
+  font-family: Arial, Futura, sans-serif;
+  font-weight: bold;
+  line-height: 36px;
+  text-align: center;
+  color: var(--main-blue);
 }
 
 .container {
-    display: flex;
+  display: flex;
 }
 
 .red {
-    background: orangered;
-    flex-grow: 1;
+  background: orangered;
+  flex-grow: 1;
 }
 
 .green {
-    background: yellowgreen;
+  background: yellowgreen;
 }
 
 .blue {
-    background: steelblue;
+  background: steelblue;
 }
 
 .container>div {
-    font-size: 5vw;
-    padding: .5em;
-    color: white;
+  font-size: 5vw;
+  padding: .5em;
+  color: white;
 }
 
 .base {
-    color: #553333;
+  color: #553333;
 }
 
 .font-line {
-    font: italic small-caps bold 24px/1.2 Arial, sans-serif;
+  font: italic small-caps bold 24px/1.2 Arial, sans-serif;
 }
 
 .first-line {
-    font-variant: small-caps;
+  font-variant: small-caps;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .border-dotted {
-    border: 1px dotted #000;
+  border: 1px dotted #000;
 }
 
 .card {
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #673ab7;
-    padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    outline: 2px solid #c52b1c;
-    /* Параметры красной рамки */
-    outline-offset: 3px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #673ab7;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  outline: 2px solid #c52b1c;
+  /* Параметры красной рамки */
+  outline-offset: 3px;
 }
 
 .card-hello {
-    width: 230px;
-    height: 25px;
-    padding: 20px;
-    margin: 10px;
-    border: 1px solid #9c27b0;
-    color: #ffffff;
-    background-color: #fa7268;
-    font-size: 20px;
-    text-align: center;
+  width: 230px;
+  height: 25px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #9c27b0;
+  color: #ffffff;
+  background-color: #fa7268;
+  font-size: 20px;
+  text-align: center;
 }
 
 .rectangle {
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  box-sizing: border-box;
 }
 
 .header {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .offer {
-    font-size: 150%;
+  font-size: 150%;
 }
 
 #header {
-    color: red;
-    font-style: italic;
-    background-color: rgba(0, 0, 0, 0.1);
+  color: red;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 p {
-    color: black;
+  color: black;
 }
 
 .red {
-    color: red;
+  color: red;
 }
 
 #blue {
-    color: blue;
+  color: blue;
 }
 
 @media (max-width: 750px) {
-    .white-text-mobile {
-        color: #ffffff;
-    }
+  .white-text-mobile {
+    color: #ffffff;
+  }
 }
 
 @keyframes color-change {
-    0% {
-        color: blue;
-    }
+  0% {
+    color: blue;
+  }
 
-    50% {
-        color: red;
-    }
+  50% {
+    color: red;
+  }
 
-    100% {
-        color: blue;
-    }
+  100% {
+    color: blue;
+  }
 }
 
 .animation-text {
-    animation: color-change 5s infinite;
+  animation: color-change 5s infinite;
 }
 
 .fixed-position {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
 }
 
 .item {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 20px;
-    float: left;
-    background-color: #fa7268;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 20px;
+  float: left;
+  background-color: #fa7268;
 }
