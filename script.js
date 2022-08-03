@@ -1,15 +1,15 @@
-function fakeBin(x) {
-    let result = '';
+let alertText = '';
 
-    for (let i = 0; i < x.length; i++) {
-        if (Number(x[i]) < 5) {
-            result += '0';
-        } else {
-            result += '1';
-        }
-    }
+function showAlert() {
+  let div = document.createElement('div');
+  div.className = "alert";
+  div.innerHTML = `<strong>Всем привет!</strong> ${alertText}`;
 
-    return result;
+  document.body.prepend(div);
+  setTimeout(() => div.remove(), 3000);
 }
 
-const bin = fakeBin('45385593107843568');
+const alertButton = document.querySelector('.alert-button');
+
+alertText = 'Вы получили новое сообщение!';
+alertButton.addEventListener("click", showAlert); 
