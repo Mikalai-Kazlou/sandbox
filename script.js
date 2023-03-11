@@ -12,4 +12,10 @@ function showAlert() {
 const alertButton = document.querySelector('.alert-button');
 
 alertText = 'Вы получили новое сообщение!';
-alertButton.addEventListener("click", showAlert); 
+alertButton.addEventListener("click", showAlert);
+
+const a = document.head.nextSibling;
+console.log(a);
+
+
+

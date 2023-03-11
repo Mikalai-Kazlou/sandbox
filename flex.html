@@ -8,146 +8,153 @@
   <meta name="description" content="Описание страницы">
   <link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/png" sizes="64x64">
   <title>Flex</title>
-</head>
 
-<style>
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-  }
-
-  #main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-
-  #main>article {
-    flex: 1;
-  }
-
-  #main>nav,
-  #main>aside {
-    background: beige;
-  }
-
-  #main>nav {
-    order: -1;
-  }
-
-  header,
-  footer {
-    background: yellowgreen;
-    height: 10vh;
-  }
-
-  header,
-  footer,
-  article,
-  nav,
-  aside {
-    padding: 1em;
-  }
-
-  .wrapper {
-    background-color: whitesmoke;
-    list-style-type: none;
-    padding: 0;
-    border-radius: 3px;
-  }
-
-  .form-row {
-    display: flex;
-    justify-content: flex-end;
-    padding: .5em;
-  }
-
-  .form-row>label {
-    padding: .5em 1em .5em 0;
-    flex: 1;
-  }
-
-  .form-row>input {
-    flex: 2;
-  }
-
-  .form-row>input,
-  .form-row>button {
-    padding: .5em;
-  }
-
-  .form-row>button {
-    background: gray;
-    color: white;
-    border: 0;
-  }
-
-  .media {
-    display: flex;
-    align-items: flex-start;
-    background: #F6F3EB;
-    padding: 1em;
-    border-radius: 3px;
-    max-width: 24em;
-  }
-
-  .media-object {
-    margin-right: 1em;
-    width: 100px;
-  }
-
-  .media-body {
-    flex: 1;
-  }
-
-  .media-heading {
-    margin: 0 0 .5em;
-  }
-
-  @media screen and (min-width: 768px) {
-    .form-row>input {
-      flex: 3;
+  <style>
+    * {
+      box-sizing: border-box;
     }
-  }
 
-  @media screen and (min-width: 992px) {
-    .form-row>input {
-      flex: 4;
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 0;
     }
-  }
 
-  @media screen and (min-width: 1200px) {
-    .form-row>input {
-      flex: 5;
-    }
-  }
-
-  @media screen and (min-width: 576px) {
     #main {
-      flex-direction: row;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    #main>article {
+      flex: 1;
     }
 
     #main>nav,
     #main>aside {
-      flex: 0 0 20vw;
+      background: beige;
+    }
+
+    #main>nav {
+      order: -1;
+    }
+
+    header,
+    footer {
+      background: yellowgreen;
+      height: 10vh;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+      padding: 1em;
+    }
+
+    h2 {
+      position: absolute;
+    }
+
+    .wrapper {
+      background-color: whitesmoke;
+      list-style-type: none;
+      padding: 0;
+      border-radius: 3px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: flex-end;
+      padding: .5em;
+    }
+
+    .form-row>label {
+      padding: .5em 1em .5em 0;
+      flex: 1;
+    }
+
+    .form-row>input {
+      flex: 2;
+    }
+
+    .form-row>input,
+    .form-row>button {
+      padding: .5em;
+    }
+
+    .form-row>button {
+      background: gray;
+      color: white;
+      border: 0;
+    }
+
+    .media {
+      display: flex;
+      align-items: flex-start;
+      background: #F6F3EB;
+      padding: 1em;
+      border-radius: 3px;
+      max-width: 24em;
     }
 
     .media-object {
-      margin-right: 0;
-      margin-left: 1em;
-      order: 1;
+      margin-right: 1em;
+      width: 100px;
     }
-  }
-</style>
+
+    .media-body {
+      flex: 1;
+    }
+
+    .media-heading {
+      margin: 0 0 .5em;
+      text-transform: uppercase;
+      text-align: right;
+    }
+
+    @media screen and (min-width: 768px) {
+      .form-row>input {
+        flex: 3;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .form-row>input {
+        flex: 4;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .form-row>input {
+        flex: 5;
+      }
+    }
+
+    @media screen and (min-width: 576px) {
+      #main {
+        flex-direction: row;
+      }
+
+      #main>nav,
+      #main>aside {
+        flex: 0 0 20vw;
+      }
+
+      .media-object {
+        margin-right: 0;
+        margin-left: 1em;
+        order: 1;
+      }
+    }
+  </style>
+</head>
 
 <body>
   <header>Шапка</header>
+  <h2>Заголовок</h2>
   <div id="main">
     <article>Статья
       <form>
@@ -174,7 +181,7 @@
         <img class="media-object" src="https://i.pinimg.com/564x/ce/e2/db/cee2db841fc72321476b6d3bf4cd80b6.jpg"
           alt="Sample photo">
         <div class="media-body">
-          <h3 class="media-heading">Organically Synthesized</h3>
+          <h3 class="media-heading">organically synthesized</h3>
           <p>Leverage agile frameworks to provide a robust synopsis for high level
             overviews. Iterative approaches to corporate strategy foster
             collaborative thinking to further the overall value proposition.</p>
